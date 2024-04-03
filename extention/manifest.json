@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "AI Context Menu",
+    "version": "1.0",
+    "description": "Adds 'Ask AI' option to context menu.",
+     
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "activeTab"
+      ],
+  
+    "background": {
+      "service_worker": "background.js"
+    }
+  
+   
+  }
+  
