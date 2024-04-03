@@ -1,8 +1,8 @@
 # geminiExtention
 get help of ai without leaving the webpage.
 
-## Demo video
-[video link](https://drive.google.com/file/d/1p0Rh0w9Q5TJuy7vt-7eCF8xcVnaEklch/view?usp=sharing)
+## How to use:- 
+select the question(Mainly mcq) then right click on Ask AI context menu and the gemini will give you the notification. The by default prompt is about giving the answer about a question but can be customised by the change in prompt variable in background.js file
 
 ## Steps to use this Extention on your local mechine:-
 
