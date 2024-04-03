@@ -30,5 +30,5 @@ run your server at 3000 by pasting `node server.js` in the terminal.
 open chrome and in url paste `chrome://extensions/` .  And then enable developer mode. Then click on the Load unpacked option. Then select the extention folder. 
 #### And All set yehh
 
-## You can edit see and edit the prompt in the background.js file in ntendextention dir/folder where prompt is declared.
+## You can edit see and edit the prompt in the background.js file in extention dir/folder where prompt is declared.
 ### the answer is currently shows only in notification but i will add a popup type of feature in future...
