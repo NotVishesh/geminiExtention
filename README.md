@@ -19,7 +19,7 @@ clone to your mechine
 open the backend dir/folder in terminal and run `npm init` and then run `npm i`
 
 ### Step 3:-
-create a file named :- `.env` and then type `API_KEY = "Paste your api key here"`.
+create a file named :- `.env` in backend folder and then type `API_KEY = "Paste your api key here"`.
 
 ### Step 4:-
 run your server at 3000 by pasting `node server.js` in the terminal.
