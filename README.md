@@ -16,7 +16,7 @@ select the question(Mainly mcq) then right click on Ask AI context menu and the 
 clone to your mechine
 
 ### Step 2:-
-open the backend dir/folder in terminal and `run npm init` and then run `npm i`
+open the backend dir/folder in terminal and run `npm init` and then run `npm i`
 
 ### Step 3:-
 create a file named :- `.env` and then type `API_KEY = "Paste your api key here"`.
