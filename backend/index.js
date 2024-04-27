@@ -34,6 +34,10 @@ app.post('/submit', async (req, res) => {
     }
 });
 
+app.get('/' , (req, res) =>{
+  res.json({message : 'to use api post request to /submit'})
+})
+
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
 });
