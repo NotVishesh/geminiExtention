@@ -1,6 +1,4 @@
-// Background script
 
-// Function to create context menu item
 chrome.contextMenus.create({
   id: "learnAI1",
   title: "Ask AI",
@@ -12,14 +10,12 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "learnAI1" && info.selectionText) {
     console.log("Selected text:", info.selectionText);
 
-    // Retrieve API key from Chrome storage
     chrome.storage.local.get('geminiExtaintionApiKey', function(result) {
       if (chrome.runtime.lastError) {
         console.error('Error retrieving geminiExtaintionApiKey:', chrome.runtime.lastError.message);
       } else {
         const apiKey = result.geminiExtaintionApiKey;
 
-        // Check if API key is available
         if (!apiKey) {
           console.error('API key not found in Chrome storage.');
           return;
@@ -31,7 +27,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}` // Include API key in the headers
+            'Authorization': `Bearer ${apiKey}` 
           },
           body: JSON.stringify({ message: prompt, apiKey : apiKey })
         })

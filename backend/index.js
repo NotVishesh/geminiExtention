@@ -3,6 +3,7 @@ const cors = require('cors');
 const app = express();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const port = 3000;
+const { inject } = require('@vercel/analytics');
 
 app.use(cors());
 app.use(express.json()); 
@@ -10,7 +11,7 @@ app.use(express.json());
 async function generateStory(apiKey, prompt) {
     const genAI = new GoogleGenerativeAI(apiKey);
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-
+    inject();
     try {
         const result = await model.generateContent(prompt);
         const response = await result.response;
