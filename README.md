@@ -2,6 +2,7 @@
 get help of ai without leaving the webpage.
 
 ## How to use:- 
+##### for first time click on the extaintion and set api key there 
 select the question(Mainly mcq) then right click on Ask AI context menu and the gemini will give you the notification. The by default prompt is about giving the answer about a question but can be customised by the change in prompt variable in background.js file
 
 ## Steps to use this Extention on your local mechine:-
@@ -15,7 +16,7 @@ select the question(Mainly mcq) then right click on Ask AI context menu and the 
 ### Step 1:- 
 clone to your mechine
 
-## For the extention part
+### For the extention part
 open chrome and in url paste `chrome://extensions/` .  And then enable developer mode. Then click on the Load unpacked option. Then select the extention folder. 
 #### And All set yehh
 
