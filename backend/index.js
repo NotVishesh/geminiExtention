@@ -18,13 +18,14 @@ async function generateStory(apiKey, prompt) {
         return text;
     } catch (error) {
         console.error("Error generating story:", error);
-        return "An error occurred while generating the story.";
+        return `An error occurred while generating the story. ${apiKey} and ${prompt}`;
     }
 }
 
 app.post('/submit', async (req, res) => {
     const { apiKey, message } = req.body;
-
+    console.log(apiKey);
+    console.log(message);
     try {
         const story = await generateStory(apiKey, message);
         res.json({ message: story });

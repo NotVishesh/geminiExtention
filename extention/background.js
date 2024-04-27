@@ -27,7 +27,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
         console.log(apiKey);
         let prompt = `highlight the write answer only ${info.selectionText}`;
-        fetch("http://localhost:3000/submit", {
+        fetch("https://gemini-extention.vercel.app/submit", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
