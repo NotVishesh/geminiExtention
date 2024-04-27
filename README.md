@@ -15,17 +15,6 @@ select the question(Mainly mcq) then right click on Ask AI context menu and the 
 ### Step 1:- 
 clone to your mechine
 
-### Step 2:-
-open the backend dir/folder in terminal and run `npm init` and then run `npm i`
-
-### Step 3:-
-create a file named :- `.env` in backend folder and then type `API_KEY = "Paste your api key here"`.
-
-### Step 4:-
-run your server at 3000 by pasting `node server.js` in the terminal.
-
-#### Backend is now running
-
 ## For the extention part
 open chrome and in url paste `chrome://extensions/` .  And then enable developer mode. Then click on the Load unpacked option. Then select the extention folder. 
 #### And All set yehh
