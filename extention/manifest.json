@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "AI Context Menu",
     "version": "1.0",
-    "description": "Adds 'Ask AI' option to context menu.",
+    "description": "AI tool which is definetly not for cheating in exams",
      
     "permissions": [
         "contextMenus",
@@ -10,8 +10,20 @@
         "activeTab",
         "storage"
       ],
+      "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      },
       "action": {
-        "default_popup": "index.html"
+        "default_popup": "index.html",
+        "default_icon": {
+          "16": "icon16.png",
+          "32": "icon32.png",
+          "48": "icon48.png",
+          "128": "icon128.png"
+        }
       },
     "background": {
       "service_worker": "background.js"
