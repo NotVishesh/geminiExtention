@@ -4,6 +4,7 @@ const app = express();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const port = 3000;
 const { inject } = require('@vercel/analytics');
+const path = require('path');
 
 app.use(cors());
 app.use(express.json()); 
