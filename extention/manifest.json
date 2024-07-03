@@ -1,13 +1,12 @@
 {
     "manifest_version": 3,
-    "name": "AI Context Menu",
+    "name": "MCQ helper",
     "version": "1.0",
-    "description": "AI tool which is definetly not for cheating in exams",
+    "description": "AI tool which is will help you solving mcq questions with gemini",
      
     "permissions": [
         "contextMenus",
         "notifications",
-        "activeTab",
         "storage"
       ],
       "icons": {

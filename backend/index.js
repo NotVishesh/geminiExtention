@@ -39,6 +39,10 @@ app.post('/submit', async (req, res) => {
 app.get('/' , (req, res) =>{
   res.json({message : 'to use api post request to /submit'})
 })
+app.get("/privacy", (req, res) => {
+    res.sendFile(path.join(__dirname, 'privacy.html'));
+  
+  });
 
 app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
