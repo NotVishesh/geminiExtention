@@ -6,7 +6,10 @@ const port = 3000;
 const { inject } = require('@vercel/analytics');
 const path = require('path');
 
-app.use(cors());
+app.use(cors( {
+    origin: 'chrome-extension://aledbjpbehjbabgkkklifglbaheecoin',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  }));
 app.use(express.json()); 
 
 async function generateStory(apiKey, prompt) {
@@ -26,8 +29,7 @@ async function generateStory(apiKey, prompt) {
 
 app.post('/submit', async (req, res) => {
     const { apiKey, message } = req.body;
-    console.log(apiKey);
-    console.log(message);
+   
     try {
         const story = await generateStory(apiKey, message);
         res.json({ message: story });
